@@ -79,7 +79,7 @@ no cap (score >= 90) {
 - **Interactive Playground**: Learn by doing with live examples
 - **Syntax Highlighting**: Beautiful code presentation
 
-### 🚀 **Educational Tools**
+###  **Educational Tools**
 - **Progressive Learning**: From basic variables to complex algorithms
 - **Cultural Examples**: Real-world scenarios that resonate
 - **Community Building**: Shared language creates connection
@@ -407,6 +407,7 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 [⭐ Star this repo](https://github.com/wqrzdn/brolang_public) | [🐛 Report issues](https://github.com/wqrzdn/brolang_public/issues) | [💡 Request features](https://github.com/wqrzdn/brolang_public/issues/new)
 
 </div>
+
 
 
 
