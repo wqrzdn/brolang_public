@@ -10,10 +10,10 @@
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/wqrzdn/brolang_public)
 [![YC Ready](https://img.shields.io/badge/YC-Ready-orange.svg)](https://www.ycombinator.com/)
 
-[🚀 **LIVE DEMO - TRY IT NOW!**](https://wqrzdn.github.io/brolang_public) | [📖 Documentation](#documentation) | [🎯 Examples](#examples) | [🤝 Contributing](#contributing)
+[🚀 **LIVE DEMO - TRY IT NOW!**](https://brolang.onrender.com) | [📖 Documentation](#documentation) | [🎯 Examples](#examples) | [🤝 Contributing](#contributing)
 
 ### 🔥 Try BroLang Right Now!
-**→ [https://wqrzdn.github.io/brolang_public](https://wqrzdn.github.io/brolang_public) ←**
+**→ [https://brolang.onrender.com](https://brolang.onrender.com) ←**
 
 *No installation needed - runs directly in your browser!*
 
@@ -353,6 +353,77 @@ Interested in supporting the future of inclusive education?
 - **Pitch Deck**: [View our deck](mailto:investors@brolang.dev)
 - **Demo**: [Schedule a demo](https://calendly.com/brolang/demo)
 - **Partnership**: [Let's collaborate](mailto:partnerships@brolang.dev)
+
+## 🎭 About BroLang & The Creator
+
+### 📖 **The Origin Story**
+BroLang was born in **December 2023** from a simple idea: what if programming felt like texting your friends instead of talking to a robot? Also implement your brain rot 🧠💀
+
+**Lonely me** created this whole language, got hyped about it, then... completely forgot to host it. Was too busy scrolling memes. Spent months doom scrolling instead of deploying. But hey, better late than never! 
+
+*Sometimes the best projects marinate in your localhost for a while (forever)* 😅
+
+### 🧠 **The Philosophy**
+**"Why should programming feel like reading ancient scrolls?"**
+
+Traditional code:
+```javascript
+if (userIsAwesome) {
+    console.log("You rock!");
+}
+```
+
+BroLang:
+```brolang
+no cap (userIsAwesome) {
+    say "You rock!";
+}
+```
+
+*Same logic, way more fun!* 🔥
+
+### 🛠️ **Technical BS:**
+Built this bad boy from scratch with:
+- **Custom Tokenizer**: Regex wizardry that understands slang
+- **Recursive Descent Parser**: Proper CS fundamentals but make it fun
+- **Tree-Walking Interpreter**: Direct execution, no compilation needed
+- **Meme-Driven Design**: Every keyword has cultural significance
+
+### 🎯 **For Recruiters & Tech Folks (my crush)**
+BroLang showcases:
+- **Language Design**: Built a complete programming language from zero
+- **Parser Theory**: Tokenization, AST generation, operator precedence
+- **JavaScript Mastery**: Complex interpreter patterns and DOM manipulation
+- **UI/UX Innovation**: Educational tools that actually engage users
+- **Cultural Awareness**: Understanding what makes tech accessible
+- **Project Management**: ...okay maybe not this one (forgot to deploy) 😂
+
+### 👨‍💻 **About Creator**
+**Current Status:** Finally hosting projects instead of just doom scrolling 📱➡️💻
+
+**Background:**
+- Created BroLang in Dec 2023 during a "what if" moment
+- Passionate about making programming accessible to everyone
+- Believes the best code is code that makes people smile and fall in love with me
+- Expert at building cool stuff and forgetting to share it (trying to work on this!)
+
+**Facts:**
+- Spent more time perfecting the `no cap` parser than some people spend in relationships
+- Can explain recursive descent parsing using TikTok references
+- Turns caffeine and memes into working interpreters ☕️ + 😂 = 💻
+
+**Contact for:**
+- Collaboration opportunities 🤝
+- Employment discussions 💼  
+- Debates about whether "yappin" is the best loop keyword 🔄
+- General tech conversations 💬
+
+**Reach me:**
+- **Email**: [waqaryazdanshaik2004@gmail.com](mailto:waqaryazdanshaik2004@gmail.com)
+- **LinkedIn**: [Connect with me](https://linkedin.com/in/wqrzdn)
+- **GitHub**: [@wqrzdn](https://github.com/wqrzdn)
+
+*"Trying to make programming feel less like work and more like culture"* ✨
 
 ## 📄 License
 
