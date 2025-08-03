@@ -1,0 +1,437 @@
+:root {
+  --bg-dark: #1a1a2e;
+  --bg-medium: #16213e;
+  --bg-light: #0f3460;
+  --accent: #00ff99;
+  --accent-dark: #00cc7a;
+  --text-light: #e7e7e7;
+  --text-dim: #a7a7a7;
+  --code-bg: #111927;
+  --error-color: #ff5252;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--bg-medium);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--accent);
+}
+
+.logo h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+}
+
+.tagline {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  display: block;
+  margin-top: -5px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  background: transparent;
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--bg-light);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: var(--bg-light);
+}
+
+.nav-button.active {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  border-color: var(--accent);
+  font-weight: bold;
+}
+
+.github-button {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #555;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding: 1rem 2rem;
+  overflow-y: auto;
+}
+
+.tab-content {
+  display: none;
+  height: 100%;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Editor Tab Styles */
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor-controls {
+  display: flex;
+  gap: 10px;
+}
+
+#exampleSelector {
+  background-color: var(--bg-medium);
+  color: var(--text-light);
+  padding: 0.5rem;
+  border: 1px solid var(--bg-light);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+#runButton {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+#runButton:hover {
+  background-color: var(--accent-dark);
+}
+
+.editor-panel {
+  flex: 1;
+  min-height: 300px;
+}
+
+#codeArea {
+  width: 100%;
+  height: 100%;
+  background: var(--code-bg);
+  color: #fff;
+  border: 2px solid var(--bg-light);
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+#codeArea:focus {
+  border-color: var(--accent);
+}
+
+/* Editor and Output Layout */
+.code-output-layout {
+  display: flex;
+  gap: 1rem;
+  height: 500px;
+  margin-top: 1rem;
+}
+
+.code-panel, .output-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-medium);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.panel-header {
+  background-color: var(--bg-light);
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--accent);
+}
+
+.panel-header h4 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+#codeArea {
+  flex: 1;
+  background-color: var(--code-bg);
+  color: var(--text-light);
+  border: none;
+  padding: 1rem;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  margin: 0;
+}
+
+#outputBox {
+  flex: 1;
+  background-color: var(--code-bg);
+  color: #0ff;
+  padding: 1rem;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  border: none;
+  margin: 0;
+}
+
+.output-placeholder {
+  color: var(--text-dim);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+#clearButton {
+  background-color: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--text-dim);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#clearButton:hover {
+  color: var(--text-light);
+  border-color: var(--text-light);
+}
+
+/* Remove old output styles */
+.output-container {
+  display: none;
+}
+
+.editor-panel {
+  display: none;
+}
+
+/* Documentation Tab Styles */
+.docs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.doc-section {
+  margin-bottom: 2rem;
+  background-color: var(--bg-medium);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.doc-section h3 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+  border-bottom: 1px solid var(--bg-light);
+  padding-bottom: 0.5rem;
+}
+
+.language-feature {
+  margin-bottom: 1.5rem;
+}
+
+.language-feature h4 {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.code-example {
+  background-color: var(--code-bg);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.code-example code {
+  color: var(--accent);
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+.code-example p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background-color: var(--bg-dark);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--bg-light);
+}
+
+.comparison-table th {
+  background-color: var(--bg-light);
+  color: var(--accent);
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* About Tab Styles */
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.about-section {
+  background-color: var(--bg-medium);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.about-section h3 {
+  color: var(--accent);
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+.about-section h3:first-child {
+  margin-top: 0;
+}
+
+.tech-stack, .creator-info {
+  margin-top: 1.5rem;
+}
+
+.tech-stack ul, .about-section ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.about-section a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.about-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--bg-medium);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .logo {
+    margin-bottom: 1rem;
+  }
+  
+  nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .editor-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .editor-controls {
+    width: 100%;
+  }
+  
+  #exampleSelector, #runButton {
+    flex: 1;
+  }
+}
+  

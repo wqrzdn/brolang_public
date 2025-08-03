@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BroLang 🔥 | The Slang Programming Language</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>💻 BroLang</h1>
+      <span class="tagline">The programming language for the culture</span>
+    </div>
+    <nav>
+      <button class="nav-button active" data-tab="editor">Playground</button>
+      <button class="nav-button" data-tab="docs">Docs</button>
+      <button class="nav-button" data-tab="about">About</button>
+      <a href="https://github.com/yourusername/bro-lang" target="_blank" class="github-button">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Editor Tab -->
+    <section id="editor" class="tab-content active">
+      <div class="editor-container">
+        <div class="editor-header">
+          <h2>Code Playground 🔥</h2>
+          <div class="editor-controls">
+            <select id="exampleSelector">
+              <option value="">Load Example...</option>
+              <option value="basics">Basic Syntax</option>
+              <option value="variables">Variables & Math</option>
+              <option value="loops">Loops Demo</option>
+              <option value="conditionals">Conditionals</option>
+              <option value="all">Full Demo</option>
+            </select>
+            <button id="runButton">
+              <i class="fas fa-play"></i> DROP IT BRO
+            </button>
+          </div>
+        </div>
+        
+        <div class="code-output-layout">
+          <!-- Code Editor Panel -->
+          <div class="code-panel">
+            <div class="panel-header">
+              <h4>Code Editor</h4>
+            </div>
+            <textarea id="codeArea" spellcheck="false">lock greeting = "Hello BroLang!"
+say greeting</textarea>
+          </div>
+          
+          <!-- Output Panel -->
+          <div class="output-panel">
+            <div class="panel-header">
+              <h4>Output</h4>
+              <button id="clearButton">Clear</button>
+            </div>
+            <div id="outputBox">
+              <div class="output-placeholder">Click "DROP IT BRO" to run your code!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Docs Tab -->
+    <section id="docs" class="tab-content">
+      <div class="docs-container">
+        <h2>BroLang Documentation</h2>
+        
+        <div class="doc-section">
+          <h3>Language Basics</h3>
+          <p>BroLang is a slang-inspired programming language that makes coding more accessible and fun.</p>
+          
+          <div class="language-feature">
+            <h4>Variables</h4>
+            <div class="code-example">
+              <code>lock age = 21</code>
+              <p>Declare a variable named "age" with value 21</p>
+            </div>
+          </div>
+          
+          <div class="language-feature">
+            <h4>Output</h4>
+            <div class="code-example">
+              <code>say "What's good"</code>
+              <p>Print "What's good" to the console</p>
+            </div>
+            <div class="code-example">
+              <code>say "Age: " + age</code>
+              <p>Print with variable concatenation</p>
+            </div>
+          </div>
+          
+          <div class="language-feature">
+            <h4>Loops</h4>
+            <div class="code-example">
+              <code>wloop (condition) { /* code */ }</code>
+              <p>While loop - repeats as long as condition is true</p>
+            </div>
+            <div class="code-example">
+              <code>yappin (1 to 5) { /* code using i */ }</code>
+              <p>For loop - iterates from start to end value, inclusive</p>
+            </div>
+          </div>
+          
+          <div class="language-feature">
+            <h4>Conditionals</h4>
+            <div class="code-example">
+              <code>no cap (condition) { /* true block */ } nah { /* else block */ }</code>
+              <p>If-else statement - executes code based on condition</p>
+            </div>
+          </div>
+          
+          <div class="language-feature">
+            <h4>Return Values</h4>
+            <div class="code-example">
+              <code>bring it back value</code>
+              <p>Return a value from a block</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="doc-section">
+          <h3>BroLang vs. JavaScript</h3>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>BroLang</th>
+                <th>JavaScript</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>lock x = 10</td>
+                <td>let x = 10</td>
+              </tr>
+              <tr>
+                <td>say "Hello"</td>
+                <td>console.log("Hello")</td>
+              </tr>
+              <tr>
+                <td>wloop (x > 0) { /* code */ }</td>
+                <td>while (x > 0) { /* code */ }</td>
+              </tr>
+              <tr>
+                <td>yappin (1 to 5) { /* code */ }</td>
+                <td>for (let i = 1; i <= 5; i++) { /* code */ }</td>
+              </tr>
+              <tr>
+                <td>no cap (x > 10) { /* code */ }</td>
+                <td>if (x > 10) { /* code */ }</td>
+              </tr>
+              <tr>
+                <td>nah { /* code */ }</td>
+                <td>else { /* code */ }</td>
+              </tr>
+              <tr>
+                <td>bring it back value</td>
+                <td>return value</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Tab -->
+    <section id="about" class="tab-content">
+      <div class="about-container">
+        <h2>About BroLang</h2>
+        
+        <div class="about-section">
+          <h3>The Story</h3>
+          <p>BroLang was created to make programming fun, accessible, and relatable through familiar slang expressions. It reduces the entry barrier for new programmers while providing a memorable and engaging coding experience.</p>
+          
+          <h3>Technical Specs</h3>
+          <p>BroLang is implemented as a JavaScript interpreter with a tokenizer and parser. It runs directly in the browser, making it perfect for educational purposes and quick prototyping.</p>
+          
+          <div class="tech-stack">
+            <h4>Technology Stack:</h4>
+            <ul>
+              <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+              <li><strong>Interpreter:</strong> Custom tokenizer and recursive descent parser</li>
+              <li><strong>Execution:</strong> Client-side JavaScript runtime</li>
+            </ul>
+          </div>
+          
+          <h3>For Recruiters</h3>
+          <p>BroLang demonstrates several key skills:</p>
+          <ul>
+            <li>Understanding of programming language design and implementation</li>
+            <li>Lexical analysis and parsing techniques</li>
+            <li>Algorithm design for interpreter patterns</li>
+            <li>Object-oriented JavaScript programming</li>
+            <li>UI/UX design for developer tools</li>
+            <li>Creative approach to technical problems</li>
+          </ul>
+          
+          <div class="creator-info">
+            <h3>About the Creator</h3>
+            <p>BroLang was created by a passionate developer with experience in language design, web development, and a flair for combining technical expertise with creative expression.</p>
+            <p>Contact me for collaboration or employment opportunities through <a href="mailto:your.email@example.com">email</a> or <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 BroLang - Created with 💯 passion. No cap.</p>
+  </footer>
+
+  <!-- Load core JS in order -->
+  <script src="bro_core/tokenizer.js"></script>
+  <script src="bro_core/parser.js"></script>
+  <script src="bro.js"></script>
+  <script>
+    // Tab switching
+    document.querySelectorAll('.nav-button').forEach(button => {
+      button.addEventListener('click', () => {
+        // Update active button
+        document.querySelectorAll('.nav-button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        button.classList.add('active');
+        
+        // Show selected tab
+        const tabId = button.getAttribute('data-tab');
+        document.querySelectorAll('.tab-content').forEach(tab => {
+          tab.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // Example selector
+    document.getElementById('exampleSelector').addEventListener('change', function() {
+      const examples = {
+        'basics': `// BroLang Basic Syntax Example
+lock greeting = "What's good!"
+say greeting
+
+// Basic math
+lock result = 10 + 5
+say "10 + 5 = " + result`,
+
+        'variables': `// BroLang Variables & Math
+lock x = 10
+lock y = 5
+
+// Math operations
+say "Addition: " + (x + y)
+say "Subtraction: " + (x - y)
+say "Multiplication: " + (x * y)
+say "Division: " + (x / y)
+
+// Updating variables
+x = x + 1
+say "x after increment: " + x`,
+
+        'loops': `// BroLang Loops Demo
+// While loop
+lock counter = 3
+say "While loop countdown:"
+wloop (counter > 0) {
+  say counter
+  counter = counter - 1
+}
+
+// For loop
+say "\\nFor loop counting:"
+yappin (1 to 5) {
+  say "Loop iteration: " + i
+}`,
+
+        'conditionals': `// BroLang Conditionals
+lock score = 95
+
+// If-else statement
+no cap (score >= 90) {
+  say "Grade: A - You're a top G!"
+} nah {
+  say "Grade: Below A - Keep grinding!"
+}
+
+// Nested conditions
+lock time = 13
+no cap (time < 12) {
+  say "Good morning!"
+} nah {
+  no cap (time < 18) {
+    say "Good afternoon!"
+  } nah {
+    say "Good evening!"
+  }
+}`,
+
+        'all': `// BroLang Complete Demo
+// Variable declarations
+lock name = "BroLang"
+lock version = 1.0
+say "Running " + name + " v" + version
+
+// Loops and conditionals together
+lock count = 5
+say "\\nCountdown starting..."
+wloop (count > 0) {
+  no cap (count == 3) {
+    say "We're at 3 - halfway there!"
+  } nah {
+    say count
+  }
+  count = count - 1
+}
+say "Blast off!\\n"
+
+// For loop with calculation
+say "Calculating squares:"
+yappin (1 to 4) {
+  say i + " squared = " + (i * i)
+}
+
+// Final message
+say "\\nThat's BroLang - no cap!"`
+      };
+      
+      if (this.value && examples[this.value]) {
+        document.getElementById('codeArea').value = examples[this.value];
+      }
+    });
+
+    // Clear output button
+    document.getElementById('clearButton').addEventListener('click', function() {
+      const outputBox = document.getElementById('outputBox');
+      outputBox.innerHTML = '<div class="output-placeholder">Click "DROP IT BRO" to run your code!</div>';
+    });
+
+    // Run button event listener
+    document.getElementById('runButton').addEventListener('click', runBroLang);
+  </script>
+</body>
+</html>
