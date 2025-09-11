@@ -42,7 +42,7 @@ no cap (score >= 90) {
 }
 ```
 
-*From "no cap" memes to actual conditionals - now that's what we call cultural programming!* 🔥
+*From "no cap" memes to actual conditionals - now that's what we call cultural programming!* 
 
 ##  Why BroLang?
 
@@ -199,7 +199,7 @@ lock saved = 0
 lock weekly_amount = 50
 lock weeks = 0
 
-say "Saving for that new setup 💻"
+say "Saving for that new setup "
 say "Goal: $" + goal
 
 wloop (saved < goal) {
@@ -208,7 +208,7 @@ wloop (saved < goal) {
     say "Week " + weeks + ": Saved $" + saved
 }
 
-say "Goal reached in " + weeks + " weeks! 🎉"
+say "Goal reached in " + weeks + " weeks! "
 say "Time to cop that gear!"
 ```
 
@@ -228,7 +228,7 @@ yappin (1 to 5) {
     
     no cap (xp >= level * 500) {
         level = level + 1
-        say "🎉 LEVEL UP! Now level " + level
+        say " LEVEL UP! Now level " + level
     }
     
     say "Total XP: " + xp
@@ -237,7 +237,7 @@ yappin (1 to 5) {
 say "\nFinal Stats:"
 say "Level: " + level
 say "XP: " + xp
-say "You're ready for the next challenge! 💯"
+say "You're ready for the next challenge! "
 ```
 
 ##  Technical Implementation
@@ -324,7 +324,7 @@ Contributors get:
 ##  About BroLang & The Creator
 
 ### **The Origin Story**
-BroLang was born in **December 2023** from a simple idea: what if programming felt like texting your friends instead of talking to a robot? Also implement your brain rot 🧠💀
+BroLang was born in **December 2023** from a simple idea: what if programming felt like texting your friends instead of talking to a robot? Also implement your brain rot 
 
 **Lonely me** created this whole language, got hyped about it, then... completely forgot to host it. Was too busy scrolling memes. Spent months doom scrolling instead of deploying. But hey, better late than never! 
 
@@ -347,7 +347,7 @@ no cap (userIsAwesome) {
 }
 ```
 
-*Same logic, way more fun!* 🔥
+*Same logic, way more fun!* 
 
 ### 🛠 **Technical BS:**
 Built this bad boy from scratch with:
@@ -376,7 +376,7 @@ BroLang showcases:
 
 **Facts:**
 - Spent more time perfecting the `no cap` parser than some people spend in relationships
-- Can explain recursive descent parsing using TikTok references
+- Can explain recursive descent parsing using meme references
 - Turns caffeine and memes into working interpreters 
 
 **Contact for:**
@@ -390,7 +390,7 @@ BroLang showcases:
 - **LinkedIn**: [Connect with me](https://linkedin.com/in/wqrzdn)
 - **GitHub**: [@wqrzdn](https://github.com/wqrzdn)
 
-*"Trying to make programming feel less like work and more like culture"* ✨
+*"Trying to make programming feel less like work and more like culture"* 
 
 ##  License
 
@@ -407,6 +407,7 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 [⭐ Star this repo](https://github.com/wqrzdn/brolang_public) | [🐛 Report issues](https://github.com/wqrzdn/brolang_public/issues) | [💡 Request features](https://github.com/wqrzdn/brolang_public/issues/new)
 
 </div>
+
 
 
 
